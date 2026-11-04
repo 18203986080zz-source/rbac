@@ -1,0 +1,22 @@
+# 本仓库仅收录 rbac（SpringBoot 后端）+ rbac-vue（Vue 前端）这一套全栈练习项目。
+# 采用白名单策略：先忽略所有顶层内容，再单独放行两个项目目录。
+# 其余练习 demo（di / minio / money / ssm / springsecurity / login-demo /
+# validation-* / vue-route-demo 等）保留在本地，但不纳入本仓库。
+/*
+!/.gitignore
+!/.gitattributes
+!/rbac/
+!/rbac-vue/
+
+# ---- rbac 后端：构建产物 / IDE 配置 / 运行日志 ----
+/rbac/target/
+/rbac/.idea/
+/rbac/info/
+/rbac/error/
+*.class
+*.jar
+*.log
+
+# 注意：rbac/src/main/resources/static/ 是后端自带的整合页面，
+# 删掉后 localhost:8080 的页面会打不开，因此保留。
+# rbac-vue 使用其自带的 .gitignore（node_modules/ dist/ .DS_Store *.log）。
